@@ -1,0 +1,80 @@
+.populares{
+    padding: 3rem 0;
+}
+
+.populares__conteudo{
+    display: flex;
+    grid-area: coteudo;
+    padding: 1rem 0;
+}
+
+.populares__card{
+    background: #fdfdfd;
+    display: grid;
+    grid-template-areas: 
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;  
+    /* DEFININDO O TAMANHO DA IMAGEEM (173 PX a primeira linha e a segunda que é a parte de conteúdo será automático*/
+
+
+}
+
+.populares__card:last-child{
+    margin-right: 0 ;
+}
+
+.populares__card___titulo{
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.populares__card___datas{
+    color: #808080;
+    font-size: .9rem;
+}
+
+.populares__card___descricao{
+    color: #333333;
+    text-align: justify; 
+    margin: 1rem 0;
+}
+
+.populares__card___imagem{
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo{
+    grid-area: card-corpo;
+    padding: .75rem;
+    display: grid;
+    grid-template-areas: 
+        "card-cabecalho"
+        "card-conteudo";
+    /*ESPAÇAMENTO UM POUCO MAIOR ENTRE UMA LINHA E OUTRA*/
+    grid-row-gap: .5rem; 
+    grid-template-rows: 50px auto;
+}
+
+.populares__titulo{
+    font-weight: 500; 
+}
+
+.populares__icone{
+    margin-right: .25rem;
+}
+
+
+.populares__cabecalho{
+    display: flex;
+    border-bottom: 1px solid #dcdcdc;
+    justify-content: space-between;
+}
+
+.populares__botao{
+    background: transparent;
+    border: none;
+    color: #333333;
+}
